@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from "react";
 import banner from "../../../assets/banner.svg";
 import Arrow from "../../atoms/Arrow";
@@ -33,6 +32,7 @@ const Banner = () => {
     squares.forEach((square) => {
       const timer = setTimeout(() => {
         setSquares((prev) => prev.filter((s) => s.id !== square.id));
+        console.log(timer);
       }, 5000);
     });
   }, [squares]);
