@@ -1,0 +1,51 @@
+{
+  "request": "Leave a request",
+  "banner": {
+    "title": "NEVODEVS - creating technology today so you can lead tomorrow",
+    "subtitle": "We develop websites, online stores, and automate processes to minimize manual labor and increase your profit. Technology that works for you – today and in the future.",
+    "cases": "Our cases"
+  },
+  "elite": {
+    "title": "Technology that turns business into a Brand",
+    "subtitle": "We create digital solutions that make businesses smarter, processes more efficient, and customers closer. From website and online store development to automation and optimization – we turn technology into your competitive advantage.",
+    "develop": "We develop powerful web products"
+  },
+  "services": {
+    "title": "Services we provide for you",
+    "item1": "Landing Pages",
+    "item2": "Online Stores (E-Commerce)",
+    "item3": "Corporate Websites",
+    "item4": "SEO Optimization"
+  },
+  "tech": {
+    "item1": "Create.",
+    "item2": "Develop.",
+    "item3": "Support.",
+    "item4": "Implement.",
+    "subtitle1": "We help transform planning systems, organizational processes, infrastructure, as well as communication and material resources.",
+    "subtitle2": "Our goal is to ensure your company grows confidently and adapts to the digital environment.",
+    "tools": "Technologies and tools:",
+    "tools1": "php / Node.js / Html5 / React / Sketch / Figma / Bootstrap / Css3",
+    "tools2": "Django / Python / Vue.js / JavaScript / Trello / ClickUp"
+  },
+  "products": {
+    "title": "Explore the CASES of our IT Development Studio",
+    "subtitle": "We develop powerful web products, helping companies grow and automate processes. From idea to result – a full-cycle solution."
+  },
+  "active": {
+    "title": "Want to turn your website into your most valuable asset?"
+  },
+  "footer": {
+    "title": "Nevo – the driving force of digital transformation. We create effective solutions, develop technology, support business growth, and bring ideas to life.",
+    "page": "Pages",
+    "page1": "Home",
+    "page2": "About Us",
+    "page3": "Services",
+    "page4": "Contacts",
+    "info": "Useful information",
+    "info1": "Useful information",
+    "info2": "FAQ",
+    "info3": "Payment",
+    "info4": "Our contacts"
+  }
+}

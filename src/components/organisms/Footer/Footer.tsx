@@ -4,8 +4,11 @@ import ig from "../../../assets/ig.svg";
 import tt from "../../../assets/tt.svg";
 import wa from "../../../assets/wa.svg";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="w-full h-96 bg-white rounded-t-2xl">
@@ -13,38 +16,46 @@ const Footer = () => {
           <div className="w-full h-52 flex justify-between">
             <div className="w-2/5 h-full flex flex-col gap-5">
               <img src={darklogo} alt="" className="size-30" />
-              <p>
-                Nevo — движущая сила цифровых трансформаций. Мы создаём
-                эффективные решения, развиваем технологии, поддерживаем рост
-                бизнеса и воплощаем идеи в реальность
-              </p>
-              <div className="flex gap-2">
+              <p>{t("footer.title")}</p>
+              <div className="flex w-full gap-20 mt-5">
                 <motion.img
                   src={tg}
                   alt=""
-                  animate={{ rotate: 360 }}
-                  transition={{
-                    duration: 10,
-                  }}
-                  whileTap={{ scale: 10 }}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.8 }}
                 />
-                <img src={wa} alt="" />
-                <img src={ig} alt="" />
-                <img src={tt} alt="" />
+                <motion.img
+                  src={wa}
+                  alt=""
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.8 }}
+                />
+                <motion.img
+                  src={ig}
+                  alt=""
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.8 }}
+                />
+                <motion.img
+                  src={tt}
+                  alt=""
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.8 }}
+                />
               </div>
             </div>
             <div className="flex flex-col justify-between">
-              <p className="text-2xl text-gray-400">Страницы</p>
-              <p>Главная</p>
-              <p>О Компани</p>
-              <p>Услуги</p>
-              <p>Контакты</p>
+              <p className="text-2xl text-gray-400">{t("footer.page")}</p>
+              <p>{t("footer.page1")}</p>
+              <p>{t("footer.page2")}</p>
+              <p>{t("footer.page3")}</p>
+              <p>{t("footer.page4")}</p>
             </div>
             <div className="flex flex-col justify-between">
-              <p className="text-2xl text-gray-400">Полезная информация</p>
-              <p>FAQ</p>
-              <p>Оплата</p>
-              <p>Наши контакты</p>
+              <p className="text-2xl text-gray-400">{t("footer.info")}</p>
+              <p>{t("footer.info1")}</p>
+              <p>{t("footer.info2")}</p>
+              <p>{t("footer.info3")}</p>
             </div>
           </div>
         </div>

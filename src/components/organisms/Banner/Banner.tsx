@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import banner from "../../../assets/banner.svg";
 import Arrow from "../../atoms/Arrow";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 interface Square {
   id: number;
@@ -11,6 +12,7 @@ interface Square {
 
 const Banner = () => {
   const [squares, setSquares] = useState<Square[]>([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -30,10 +32,9 @@ const Banner = () => {
 
   useEffect(() => {
     squares.forEach((square) => {
-      const timer = setTimeout(() => {
+      setTimeout(() => {
         setSquares((prev) => prev.filter((s) => s.id !== square.id));
-        console.log(timer);
-      }, 5000);
+      }, 8000);
     });
   }, [squares]);
 
@@ -45,7 +46,7 @@ const Banner = () => {
             src={banner}
             alt=""
             initial={{ opacity: 0, scale: 0.1 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 0.8 }}
             transition={{
               duration: 2,
               delay: 1,
@@ -65,18 +66,11 @@ const Banner = () => {
           ))}
         </div>
         <div className="text-white">
-          <p className="text-7xl mb-10">
-            NEVODEVS - создаём технологии сегодня, <br /> что бы вы лидировали
-            завтра
-          </p>
+          <p className="text-7xl mb-10">{t("banner.title")}</p>
         </div>
         <div className="w-full h-32 flex justify-between">
           <div className="w-1/2 h-full text-white">
-            <p className="text-xl">
-              Мы разрабатываем сайты, онлайн-магазины и автоматизируем процессы,
-              чтобы минимизировать ручной труд и увеличить вашу прибыль.
-              Технологии, которые работают на вас – сегодня и в будущем.
-            </p>
+            <p className="text-xl">{t("banner.subtitle")}</p>
           </div>
           <div className="h-full flex items-center gap-5 mb-10">
             <div className="flex items-center ">
@@ -85,7 +79,7 @@ const Banner = () => {
             </div>
             <div className="">
               <button className="w-56 h-14 flex items-center gap-2 justify-center border-red-300 text-white border rounded-4xl  px-4 py-2 ">
-                Наши кейсы
+                {t("banner.cases")}
                 <Arrow width={10} />
               </button>
             </div>
