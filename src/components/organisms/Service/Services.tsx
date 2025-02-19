@@ -2,6 +2,7 @@ import { CircleCheck } from "lucide-react";
 import seo from "../../../assets/seo.jpg";
 import circle from "../../../assets/circle.svg";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react";
 
 const Services = () => {
   const { t } = useTranslation();
@@ -10,41 +11,119 @@ const Services = () => {
     <>
       <div className="w-full bg-black py-20">
         <div className="w-11/12 mx-auto text-white">
-          <h1 className="text-center  text-5xl uppercase">
+          <motion.h1
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
+            className="text-center  text-5xl uppercase"
+          >
             {t("services.title")}
-          </h1>
+          </motion.h1>
           <div className="flex justify-center gap-8 mt-10">
             <div className="w-2/5">
-              <img src={seo} alt="" className="rounded-lg" />
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 3, delay: 0.4 }}
+                viewport={{ once: true }}
+                src={seo}
+                alt=""
+                className="rounded-lg"
+              />
             </div>
             <div className="w-2/5 flex flex-col justify-evenly">
-              <div className="w-full flex justify-between items-center">
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay: 0 }}
+                viewport={{ once: true }}
+                className="w-full flex justify-between items-center"
+              >
                 <p className="text-2xl">{t("services.item1")}</p>
                 <CircleCheck />
-              </div>
-              <div className="w-full h-px bg-white"></div>
-              <div className="w-full flex justify-between items-center">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="w-full h-px bg-white"
+              ></motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="w-full flex justify-between items-center"
+              >
                 <p className="text-2xl">{t("services.item2")}</p>
                 <CircleCheck />
-              </div>
-              <div className="w-full h-px bg-white"></div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay: 1 }}
+                viewport={{ once: true }}
+                className="w-full h-px bg-white"
+              ></motion.div>
 
-              <div className="w-full flex justify-between items-center">
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay: 1 }}
+                viewport={{ once: true }}
+                className="w-full flex justify-between items-center"
+              >
                 <p className="text-2xl">{t("services.item3")}</p>
                 <CircleCheck />
-              </div>
-              <div className="w-full h-px bg-white"></div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay: 1.5 }}
+                viewport={{ once: true }}
+                className="w-full h-px bg-white"
+              ></motion.div>
 
-              <div className="w-full flex justify-between items-center">
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay: 1.5 }}
+                viewport={{ once: true }}
+                className="w-full flex justify-between items-center"
+              >
                 <p className="text-2xl">{t("services.item4")}</p>
                 <CircleCheck />
-              </div>
-              <div className="w-full h-px bg-white"></div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay: 2 }}
+                viewport={{ once: true }}
+                className="w-full h-px bg-white"
+              ></motion.div>
             </div>
           </div>
           <div className="flex justify-center gap-8 mt-20">
             <div className="w-2/5 -mt-20">
-              <img src={circle} alt="" />
+              <motion.img
+                animate={{
+                  scale: [0.5, 1, 0.9, 0.7, 1],
+                  rotate: [0, 90, 180, 270, 360],
+                  borderRadius: ["0%", "10%", "50%", "40%", "0%"],
+                }}
+                transition={{
+                  duration: 3, // Увеличил длительность для плавности
+                  ease: "anticipate", // Более естественное движение
+                  times: [0, 0.25, 0.5, 0.75, 1], // Равномерное распределение
+                  repeat: Infinity,
+                  repeatType: "reverse", // Двусторонняя анимация вместо резкого повтора
+                  repeatDelay: 1,
+                }}
+                src={circle}
+                alt=""
+              />
             </div>
             <div className="w-2/5 flex flex-col justify-between">
               <ul className="text-5xl leading-16">

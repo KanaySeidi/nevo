@@ -9,7 +9,7 @@ const Case = () => {
     <>
       <div className="w-full py-20 bg-black">
         <div className="w-11/12 mx-auto text-white">
-          <h1 className="text-4xl uppercase">{t("products.title")}</h1>
+          <h1 className="w-1/2 text-4xl uppercase">{t("products.title")}</h1>
           <div className="w-full flex justify-center gap-10 mt-10">
             <div className="w-2/5">
               <img src={seo} alt="" />
@@ -62,7 +62,7 @@ const Case = () => {
                 <h2 className="text-4xl md:text-4xl font-semibold">
                   {t("active.title")}
                 </h2>
-                <button className="bg-blue-500 w-44 h-10 text-white rounded-3xl bg-gradient-to-r from-[#BB4642] to-[#A22976] flex justify-center items-center gap-2">
+                <button className="w-auto h-10 px-5 text-white rounded-3xl bg-gradient-to-r from-[#BB4642] to-[#A22976] flex justify-center items-center gap-2">
                   {t("request")}
                   <Arrow width={10} />
                 </button>

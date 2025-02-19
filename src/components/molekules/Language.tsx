@@ -24,12 +24,16 @@ const Language = ({ width }: { width: number }) => {
           <select
             name="language"
             id="language-select"
-            className="text-white"
+            className="text-white focus:outline-none outline-none"
             value={currentLanguage}
             onChange={changeLanguage}
           >
             {languages.map(({ title, key }) => (
-              <option key={key} className="text-black" value={key}>
+              <option
+                key={key}
+                className="text-black focus:outline-none outline-none"
+                value={key}
+              >
                 {title.toUpperCase()}
               </option>
             ))}

@@ -18,7 +18,7 @@ const Header = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            className="bg-blue-500 w-44 h-10 text-white rounded-3xl bg-gradient-to-r from-[#BB4642] to-[#A22976] flex justify-center items-center gap-2"
+            className="bg-blue-500 w-auto h-10 px-5 text-white rounded-3xl bg-gradient-to-r from-[#BB4642] to-[#A22976] flex justify-center items-center gap-2"
           >
             {t("request")}
             <Arrow width={10} />

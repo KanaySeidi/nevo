@@ -65,14 +65,32 @@ const Banner = () => {
             />
           ))}
         </div>
-        <div className="text-white">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
+          className="text-white"
+        >
           <p className="text-7xl mb-10">{t("banner.title")}</p>
-        </div>
+        </motion.div>
         <div className="w-full h-32 flex justify-between">
-          <div className="w-1/2 h-full text-white">
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
+            className="w-1/2 h-full text-white"
+          >
             <p className="text-xl">{t("banner.subtitle")}</p>
-          </div>
-          <div className="h-full flex items-center gap-5 mb-10">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
+            className="h-full flex items-center gap-5 mb-10"
+          >
             <div className="flex items-center ">
               <div className="w-[600px] border-b border-white "></div>
               <div className="w-2 h-2 rounded-full bg-white"></div>
@@ -83,7 +101,7 @@ const Banner = () => {
                 <Arrow width={10} />
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
