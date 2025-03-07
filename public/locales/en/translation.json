@@ -1,5 +1,5 @@
 {
-  "request": "Leave a request",
+  "request": "Send a request",
   "banner": {
     "title": "NEVODEVS - creating technology today so you can lead tomorrow",
     "subtitle": "We develop websites, online stores, and automate processes to minimize manual labor and increase your profit. Technology that works for you – today and in the future.",
@@ -47,5 +47,13 @@
     "info2": "FAQ",
     "info3": "Payment",
     "info4": "Our contacts"
+  },
+  "modal": {
+    "title": "Leave your details and our managers will call you back",
+    "fullName": "Full name",
+    "phone": "Phone",
+    "email": "Email",
+    "send": "Send",
+    "sending": "Sending"
   }
 }

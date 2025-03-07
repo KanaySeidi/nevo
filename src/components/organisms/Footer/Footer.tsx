@@ -11,13 +11,13 @@ const Footer = () => {
 
   return (
     <>
-      <div className="w-full h-96 bg-white rounded-t-2xl">
+      <div className="w-full bg-white rounded-t-2xl py-10 mb-20">
         <div className="w-11/12 mx-auto h-full flex justify-center items-center">
-          <div className="w-full h-52 flex justify-between">
-            <div className="w-2/5 h-full flex flex-col gap-5">
+          <div className="w-full h-52 flex flex-col md:flex-row justify-between gap-10 md:gap-0">
+            <div className="w-full md:w-2/5 h-full flex flex-col gap-5">
               <img src={darklogo} alt="" className="size-30" />
               <p>{t("footer.title")}</p>
-              <div className="flex w-full gap-20 mt-5">
+              <div className="flex w-full gap-10 md:gap-20 mt-5">
                 <motion.img
                   src={tg}
                   alt=""
