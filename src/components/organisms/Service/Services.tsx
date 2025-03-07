@@ -106,7 +106,7 @@ const Services = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-center gap-8 mt-20">
-            <div className="w-full md:w-2/5 -mt-20">
+            <div className="w-11/12 md:w-2/5 -mt-20">
               <motion.img
                 animate={{
                   scale: [0.5, 1, 0.9, 0.7, 1],

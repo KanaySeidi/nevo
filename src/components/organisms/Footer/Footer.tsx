@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="w-full md:w-2/5 h-full flex flex-col gap-5">
               <img src={darklogo} alt="" className="size-30" />
               <p>{t("footer.title")}</p>
-              <div className="flex w-full gap-10 md:gap-20 mt-5">
+              <div className="w-3/5 flex justify-between mt-5">
                 <motion.img
                   src={tg}
                   alt=""
