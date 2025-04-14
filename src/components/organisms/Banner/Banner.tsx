@@ -82,7 +82,7 @@ const Banner = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 2 }}
             viewport={{ once: true }}
-            className="w-full md:w-1/3 h-full text-white"
+            className="w-full md:w-1/2 h-full text-white"
           >
             <p className="text-base md:text-base lg:text-lg text-justify">
               {t("banner.subtitle")}
@@ -94,7 +94,7 @@ const Banner = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 2 }}
             viewport={{ once: true }}
-            className="flex items-center justify-end w-full md:w-1/3 h-0.5 bg-white"
+            className="flex items-center justify-end w-full md:w-1/3 h-0.5 bg-white md:hidden lg:block"
           >
             <div className="w-2 h-2 rounded-full bg-white block md:hidden lg:block"></div>
           </motion.div>
