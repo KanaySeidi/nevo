@@ -55,7 +55,7 @@ export default function Modal() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.8 }}
         onClick={open}
-        className="bg-blue-500 w-auto h-10 px-5 text-white rounded-3xl bg-gradient-to-r from-[#BB4642] to-[#A22976] flex justify-center items-center gap-2 text-xs md:text-base"
+        className="bg-blue-500 w-auto h-10 px-2 md:px-5 text-white rounded-3xl bg-gradient-to-r from-[#BB4642] to-[#A22976] flex justify-center items-center gap-2 text-xs md:text-base"
       >
         {t("request")}
         <ArrowUpRight />

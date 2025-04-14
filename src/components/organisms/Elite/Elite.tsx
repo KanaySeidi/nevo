@@ -21,7 +21,7 @@ const Elite = () => {
             className="w-full object-contain"
           />
 
-          <div className="w-full  flex flex-col md:flex-row mt-4 md:mt-20 gap-2">
+          <div className="w-full flex flex-col md:flex-row mt-4 md:mt-20 gap-20 md:gap-10">
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -29,7 +29,7 @@ const Elite = () => {
               viewport={{ once: true }}
               className="text-black w-full h-[300px]  md:w-1/2 flex flex-col justify-between gap-10 md:gap-5"
             >
-              <p className="text-xl md:text-6xl font-medium">
+              <p className="text-xl md:text-4xl lg:text-6xl font-medium">
                 {t("elite.title")}
               </p>
               <p className="text-justify text-base md:text-lg">
@@ -44,7 +44,7 @@ const Elite = () => {
               <motion.img
                 src={eliteImg}
                 alt="laptop"
-                className="w-full h-full object-cover"
+                className="w-full h-[300px] md:h-full object-cover md:object-cover rounded-2xl"
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2 }}

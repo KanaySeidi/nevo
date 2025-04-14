@@ -126,7 +126,7 @@ const Services = () => {
               />
             </div>
             <div className="w-full md:w-2/5 flex flex-col justify-between">
-              <ul className="text-5xl leading-16">
+              <ul className="text-2xl md:text-5xl leading-16">
                 <li>{t("tech.item1")}</li>
                 <li>{t("tech.item2")}</li>
                 <li>{t("tech.item3")}</li>
@@ -138,7 +138,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center gap-8 mt-10">
+          <div className="flex flex-col md:flex-row justify-center gap-8 mt-10">
             <div className="w-full md:w-2/5">
               <p className="text-xl text-center">{t("tech.tools")}</p>
             </div>

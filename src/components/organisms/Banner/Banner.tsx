@@ -20,8 +20,8 @@ const Banner = () => {
         if (prevSquares.length >= 6) return prevSquares;
         const newSquare: Square = {
           id: Date.now(),
-          left: Math.random() * 90,
-          top: Math.random() * 90,
+          left: Math.random() * 80,
+          top: Math.random() * 80,
         };
         return [...prevSquares, newSquare];
       });
@@ -39,9 +39,9 @@ const Banner = () => {
   }, [squares]);
 
   return (
-    <div className="w-full h-auto  bg-[#1C1C1C] pb-20">
-      <div className="w-11/12 h-full mx-auto">
-        <div className="w-full h-full flex justify-center -mt-10 ">
+    <div className="w-full h-auto  bg-[#1C1C1C] pb-20 pt-40 md:pt-10">
+      <div className="w-11/12 max-w-screen-xl h-full mx-auto">
+        <div className="w-full h-full flex justify-center -mt-10 relative">
           <motion.img
             src={banner}
             alt=""
@@ -56,7 +56,7 @@ const Banner = () => {
           {squares.map((square) => (
             <div
               key={square.id}
-              className="absolute w-20 h-20 bg-white/60  backdrop-blur-md rounded-2xl 
+              className="absolute w-8 md:w-20 h-8 md:h-20 bg-white/60  backdrop-blur-md rounded-md md:rounded-2xl 
                      fade-and-grow transition duration-1000"
               style={{
                 left: `${square.left}%`,
@@ -96,14 +96,14 @@ const Banner = () => {
             viewport={{ once: true }}
             className="flex items-center justify-end w-full md:w-1/3 h-0.5 bg-white"
           >
-            <div className="w-2 h-2 rounded-full bg-white"></div>
+            <div className="w-2 h-2 rounded-full bg-white block md:hidden lg:block"></div>
           </motion.div>
           <motion.button
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 2 }}
             viewport={{ once: true }}
-            className="w-auto h-14 flex items-center justify-center border-red-300 text-white border rounded-4xl  px-6 py-3 "
+            className="w-auto h-14 flex items-center justify-center border-red-300 text-white border rounded-4xl px-6 py-3 gap-2"
           >
             <p>{t("banner.cases")}</p>
             <Arrow width={20} />

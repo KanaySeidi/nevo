@@ -9,59 +9,83 @@ const Case = () => {
     <>
       <div className="w-full py-20 bg-black">
         <div className="w-11/12 mx-auto text-white">
-          <h1 className="w-full md:w-1/2 text-base md:text-4xl uppercase">
+          <h1 className="w-full lg:w-1/2 text-base md:text-4xl uppercase">
             {t("products.title")}
           </h1>
           <div className="w-full flex flex-col md:flex-row justify-center gap-10 mt-5 md:mt-10">
             <div className="w-full md:w-2/5">
-              <img src={seo} alt="" />
+              <img src={seo} alt="" className="rounded-md md:rounded-2xl" />
             </div>
             <div className="w-full md:w-2/5 flex flex-col justify-between">
               <div className="flex w-full justify-between">
-                <img src={seo} alt="" className="w-2/5" />
-                <img src={seo} alt="" className="w-2/5" />
+                <img
+                  src={seo}
+                  alt=""
+                  className="w-2/5 rounded-md md:rounded-2xl"
+                />
+                <img
+                  src={seo}
+                  alt=""
+                  className="w-2/5 rounded-md md:rounded-2xl"
+                />
               </div>
               <div className="mt-10 md:mt-0">
                 <p>{t("products.subtitle")}</p>
               </div>
             </div>
           </div>
-          <div className="w-full h-px bg-white/60 my-10 md:my-28"></div>
+          <div className="w-full h-px bg-white/60 my-10 md:mt-14 lg:my-28"></div>
           <div className="w-full flex flex-col md:flex-row justify-center gap-10 mt-10">
             <div className="w-full md:w-2/5">
-              <img src={seo} alt="" />
+              <img src={seo} alt="" className="rounded-md md:rounded-2xl" />
             </div>
             <div className="w-full md:w-2/5 flex flex-col justify-between">
               <div className="flex w-full justify-between">
-                <img src={seo} alt="" className="w-2/5" />
-                <img src={seo} alt="" className="w-2/5" />
+                <img
+                  src={seo}
+                  alt=""
+                  className="w-2/5 rounded-md md:rounded-2xl"
+                />
+                <img
+                  src={seo}
+                  alt=""
+                  className="w-2/5 rounded-md md:rounded-2xl"
+                />
               </div>
               <div className="mt-10 md:mt-0">
                 <p>{t("products.subtitle")}</p>
               </div>
             </div>
           </div>
-          <div className="w-full h-px bg-white/60 my-10 md:my-28"></div>
+          <div className="w-full h-px bg-white/60 my-10 md:mt-14 lg:my-28"></div>
           <div className="w-full flex flex-col md:flex-row justify-center gap-10 mt-10">
             <div className="w-full md:w-2/5">
-              <img src={seo} alt="" />
+              <img src={seo} alt="" className="rounded-md md:rounded-2xl" />
             </div>
             <div className="w-full md:w-2/5 flex flex-col justify-between">
               <div className="flex w-full justify-between">
-                <img src={seo} alt="" className="w-2/5" />
-                <img src={seo} alt="" className="w-2/5" />
+                <img
+                  src={seo}
+                  alt=""
+                  className="w-2/5 rounded-md md:rounded-2xl"
+                />
+                <img
+                  src={seo}
+                  alt=""
+                  className="w-2/5 rounded-md md:rounded-2xl"
+                />
               </div>
               <div className="mt-10 md:mt-0">
                 <p>{t("products.subtitle")}</p>
               </div>
             </div>
           </div>
-          <div className="w-full h-px bg-white/60 my-10 md:my-28"></div>
+          <div className="w-full h-px bg-white/60 my-10 md:mt-14 lg:my-28"></div>
 
           <div>
             <div className="flex items-center justify-center min-h-screen">
               <div className="relative w-full h-[500px] p-8 text-center text-white bg-white/20 rounded-4xl backdrop-blur-xl flex flex-col items-center justify-center gap-40">
-                <h2 className="text-4xl md:text-4xl font-semibold">
+                <h2 className="text-2xl md:text-4xl font-semibold">
                   {t("active.title")}
                 </h2>
                 <button>
